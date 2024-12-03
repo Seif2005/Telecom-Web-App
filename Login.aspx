@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Telecom_Web_App.Login" %>
+﻿﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Telecom_Web_App.Login" %>
 
 
 <!DOCTYPE html>
@@ -18,6 +18,8 @@
 
             /* Form Styling */
             .login-form {
+                border: 3px solid #4CAF50;
+                border-radius: 10px;
                 background-color: white;
                 padding: 30px;
                 border-radius: 8px;
@@ -54,7 +56,7 @@
 
             /* Button Styling */
             .button {
-                background-color: #4CAF50;
+                background-color: #007bff;
                 color: white;
                 border: none;
                 padding: 12px;
@@ -65,7 +67,7 @@
             }
 
             .button:hover {
-                background-color: #45a049;
+                background-color: #0056b3;
             }
     </style>
     <title>Login</title>

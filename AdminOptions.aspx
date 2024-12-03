@@ -4,49 +4,125 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="styles2.css"/>
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-        <asp:Button ID="Button1" runat="server" OnClick="All_customers_wallets" Text="All customers Wallets" Height="36px" Width="441px" />
-            <br />
-        <asp:Button ID="Button2" runat="server" Text="All E-shop and Redeemed voucher" Width="441px" OnClick="Eshop_Redeem_Vouchers" Height="36px" />
-            <br />
-        <asp:Button ID="Button3" runat="server" OnClick="Account_Payments" Text="Accounts payments" Height="36px" Width="441px" />
-            <br />
-        <asp:Button ID="Button4" runat="server" OnClick="Num_Cashback_walletId" Text="Number of cashback per Wallet ID" Height="36px" Width="441px" />
-            <br />
-        <asp:Button ID="Button5" runat="server" OnClick="Num_Accept_Payment_Trans" Text="Number Of Accepted Payment Transactions" Height="36px" Width="441px" />
-            <br />
-        <asp:Button ID="Button6" runat="server" OnClick="Cashback_wallet_planID" Text="Amount Of Cashback To Wallet (Using Plan Id)" Height="36px" Width="441px" />
-            <br />
-        <asp:Button ID="Button7" runat="server" OnClick="Avg_SentTrans_From_wallet_Date" Text="Average Sent Transaction From a certain Wallet (in a Date)" Height="36px" Width="441px" />
-            <br />
-        <asp:Button ID="Button8" runat="server" OnClick="Wallet_Using_MobileNo" Text="Get Wallet With Mobile Number" Height="36px" Width="441px" />
-            <br />
-        <asp:Button ID="Button17" runat="server" Text="Update Points" OnClick="UpdatePoints" Height="36px" Width="441px"/> <br />
-            <br />
-            <br />
-        <asp:Button ID="Button9" runat="server" OnClick="Customer_Profile_Active_Account" Text="Customer Profiles Active Accounts" Height="36px" Width="441px" />
-            <br />
-        <asp:Button ID="Button10" runat="server" OnClick="ViewStoresAndVouchers" Text="View Physical Stores & Vouchers" Height="36px" Width="441px" />
-            <br />
-        <asp:Button ID="Button11" runat="server" OnClick="ResolvedTicketsDetails" Text="Resolved Tickets Details" Height="36px" Width="441px" />
-            <br />
-        <asp:Button ID="Button12" runat="server" OnClick="CustomerAccountsAndPlans" Text="Customer Accounts & Plans" Height="36px" Width="441px" />
-            <br />
-        <asp:Button ID="Button13" runat="server" OnClick="ListAccountsByPlanAndDate" Text="List Accounts by Plan & Date" Height="36px" Width="441px" />
-            <br />
-        <asp:Button ID="Button14" runat="server" OnClick="AccountUsageByPlan" Text="Account Usage by Plan" Height="36px" Width="441px" />
-            <br />
-        <asp:Button ID="Button15" runat="server" OnClick="RemovePlanBenefits" Text="Remove Plan Benefits" Height="36px" Width="441px" />
-            <br />
-        <asp:Button ID="Button16" runat="server" OnClick="SmsOffersByAccount" Text="SMS Offers by Account" Height="36px" Width="441px" />
-            <br />
+    <div class="logo">Telecom26 Co.</div>
+    <h1 class="title">Features</h1>
 
+    <form id="form1" runat="server">
+        <div class="grid-container">
+            <asp:LinkButton ID="Button1" class="grid-item" runat="server" OnClick="All_customers_wallets" >
+                <span class="icon-text">
+                    <i class="fas fa-bolt"></i>
+                    <span class="button-text">All customers Wallets</span>
+                </span>
+            </asp:LinkButton>
+            <asp:LinkButton ID="Button2" class="grid-item" runat="server" OnClick="Eshop_Redeem_Vouchers" >
+                <span class="icon-text">
+                    <i class="fas fa-bolt"></i>
+                    <span class="button-text">All E-shop and Redeemed voucher</span>
+                </span>
+            </asp:LinkButton>
+            <asp:LinkButton ID="Button3" class="grid-item" runat="server" OnClick="Account_Payments" >
+                <span class="icon-text">
+                    <i class="fas fa-bolt"></i>
+                    <span class="button-text">Accounts payments</span>
+                </span>
+            </asp:LinkButton>
+            <asp:LinkButton ID="Button4" class="grid-item" runat="server" OnClick="Num_Cashback_walletId" >
+                <span class="icon-text">
+                    <i class="fas fa-bolt"></i>
+                    <span class="button-text">Number of cashback per Wallet ID</span>
+                </span>
+            </asp:LinkButton>
+            <asp:LinkButton ID="Button5" class="grid-item" runat="server" OnClick="Num_Accept_Payment_Trans" >
+                <span class="icon-text">
+                    <i class="fas fa-bolt"></i>
+                    <span class="button-text">Number Of Accepted Payment Transactions</span>
+                </span>
+            </asp:LinkButton>
+            <asp:LinkButton ID="Button6" class="grid-item" runat="server" OnClick="Cashback_wallet_planID" >
+                <span class="icon-text">
+                    <i class="fas fa-bolt"></i>
+                    <span class="button-text">Amount Of Cashback To Wallet (Using Plan Id)</span>
+                </span>
+            </asp:LinkButton>
         </div>
- 
+
+        <div class="grid-container">
+    <asp:LinkButton ID="Button7" class="grid-item" runat="server" OnClick="Avg_SentTrans_From_wallet_Date" >
+        <span class="icon-text">
+            <i class="fas fa-bolt"></i>
+            <span class="button-text">Average Sent Transaction From a certain Wallet (in a Date)</span>
+        </span>
+    </asp:LinkButton>
+    <asp:LinkButton ID="Button8" class="grid-item" runat="server" OnClick="Wallet_Using_MobileNo" >
+        <span class="icon-text">
+            <i class="fas fa-bolt"></i>
+            <span class="button-text">Get Wallet With Mobile Number</span>
+        </span>
+    </asp:LinkButton>
+    <asp:LinkButton ID="Button17" class="grid-item" runat="server" OnClick="UpdatePoints">
+        <span class="icon-text">
+            <i class="fas fa-bolt"></i>
+            <span class="button-text">Update Points</span>
+        </span>
+    </asp:LinkButton>
+    <asp:LinkButton ID="Button9" class="grid-item" runat="server" OnClick="Customer_Profile_Active_Account" >
+        <span class="icon-text">
+            <i class="fas fa-bolt"></i>
+            <span class="button-text">Customer Profiles Active Accounts</span>
+        </span>
+    </asp:LinkButton>
+    <asp:LinkButton ID="Button10" class="grid-item" runat="server" OnClick="ViewStoresAndVouchers" >
+        <span class="icon-text">
+            <i class="fas fa-bolt"></i>
+            <span class="button-text">View Physical Stores & Vouchers</span>
+        </span>
+    </asp:LinkButton>
+    <asp:LinkButton ID="Button11" class="grid-item" runat="server" OnClick="ResolvedTicketsDetails" >
+        <span class="icon-text">
+            <i class="fas fa-bolt"></i>
+            <span class="button-text">Resolved Tickets Details</span>
+        </span>
+    </asp:LinkButton>
+</div>
+
+<div class="grid-container">
+    <asp:LinkButton ID="Button12" class="grid-item" runat="server" OnClick="CustomerAccountsAndPlans" >
+        <span class="icon-text">
+            <i class="fas fa-bolt"></i>
+            <span class="button-text">Customer Accounts & Plans</span>
+        </span>
+    </asp:LinkButton>
+    <asp:LinkButton ID="Button13" class="grid-item" runat="server" OnClick="ListAccountsByPlanAndDate" >
+        <span class="icon-text">
+            <i class="fas fa-bolt"></i>
+            <span class="button-text">List Accounts by Plan & Date</span>
+        </span>
+    </asp:LinkButton>
+    <asp:LinkButton ID="Button14" class="grid-item" runat="server" OnClick="AccountUsageByPlan" >
+        <span class="icon-text">
+            <i class="fas fa-bolt"></i>
+            <span class="button-text">Account Usage by Plan</span>
+        </span>
+    </asp:LinkButton>
+    <asp:LinkButton ID="Button15" class="grid-item" runat="server" OnClick="RemovePlanBenefits" >
+        <span class="icon-text">
+            <i class="fas fa-bolt"></i>
+            <span class="button-text">Remove Plan Benefits</span>
+        </span>
+    </asp:LinkButton>
+    <asp:LinkButton ID="Button16" class="grid-item" runat="server" OnClick="SmsOffersByAccount" >
+        <span class="icon-text">
+            <i class="fas fa-bolt"></i>
+            <span class="button-text">SMS Offers by Account</span>
+        </span>
+    </asp:LinkButton>
+</div>
     </form>
 </body>
 </html>

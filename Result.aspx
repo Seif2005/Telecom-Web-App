@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Result.aspx.cs" Inherits="Telecom_Web_App.Result" %>
+﻿﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Result.aspx.cs" Inherits="Telecom_Web_App.Result" %>
 
 <!DOCTYPE html>
 
