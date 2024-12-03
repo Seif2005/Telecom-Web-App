@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -42,7 +43,20 @@ namespace Telecom_Web_App
             string mobileNumber = Session["mobileNo"].ToString();
 
             DataTable data = GetData($"SELECT * FROM Usage_Plan_CurrentMonth('{mobileNumber}')");
-            Session["GridData"] = data;
+            if (data.Rows.Count == 0)
+            {
+                //data.Columns.Add("Message", typeof(string));
+                //data.Rows.Add(0, 0, 0, "No Active plans");
+
+                DataTable data2 = new DataTable();
+                data2.Columns.Add("Message", typeof(string));
+                data2.Rows.Add("No Active plans");
+                Session["GridData"] = data2;
+            }
+            else
+            {
+                Session["GridData"] = data;
+            }
             Response.Redirect("/Result.aspx");
         }
 
@@ -99,7 +113,20 @@ namespace Telecom_Web_App
                 return;
             }
             DataTable data = GetData($"SELECT * FROM Subscribed_plans_5_Months('{mobileNumber}')");
-            Session["GridData"] = data;
+            if (data.Rows.Count == 0)
+            {
+                //data.Columns.Add("Message", typeof(string));
+                //data.Rows.Add(0, 0, 0, 0, 0, 0, 0, "No Subscribed plans");
+
+                DataTable data2 = new DataTable();
+                data2.Columns.Add("Message", typeof(string));
+                data2.Rows.Add("No Active plans");
+                Session["GridData"] = data2;
+            }
+            else
+            {
+                Session["GridData"] = data;
+            }
             Response.Redirect("/Result.aspx");
         }
 

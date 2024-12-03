@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel="stylesheet" href="styles1.css" />
     <title></title>
 </head>
 <body>
@@ -12,8 +13,6 @@
             <h2>Account Specification</h2>
             <asp:Label ID="lblMobileNo" runat="server" Text="MobileNo:  "></asp:Label>
             <asp:TextBox ID="Mobile_No" runat="server"></asp:TextBox>
-            <br />
-            <br />
             <asp:Button ID="btnSubmit" runat="server" Text="Get Total Points" OnClick="Retrive_total_points" />
         </div>
     </form>

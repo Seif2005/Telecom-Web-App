@@ -50,6 +50,16 @@ form input[type="text"] {
     font-size: 16px;
 }
 
+    form input[type="text"]:hover {
+        border-color: #4CAF50;
+    }
+
+    form input[type="text"]:focus {
+        outline: none;
+        border-color: #4CAF50;
+        box-shadow: 0 0 4px rgba(0, 91, 179, 0.5);
+    }
+
 /* Styling for date input fields */
 form input[type="date"] {
     text-align: left;
@@ -99,3 +109,37 @@ form button {
     form button:hover {
         background-color: #0056b3;
     }
+
+form select {
+    width: 100%;
+    max-width: 300px; /* Matches the width of other inputs */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    /*appearance: none;*/ /* Removes default dropdown arrow for better styling */
+}
+
+/* Dropdown hover and focus effects */
+    form select:hover {
+        border-color: #4CAF50;
+    }
+
+    form select:focus {
+        outline: none;
+        border-color: #4CAF50;
+        box-shadow: 0 0 4px rgba(0, 91, 179, 0.5);
+    }
+
+/* Styling for the dropdown arrow */
+form select:after {
+    content: '\25BC'; /* Downward arrow */
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
+}
