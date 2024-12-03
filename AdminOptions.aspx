@@ -9,12 +9,25 @@
 <body>
     <form id="form1" runat="server">
         <div>
-        <asp:Button ID="Button1" runat="server" OnClick="All_customers_wallets" Text="All customers Wallets" Height="36px" Width="358px" />
-        <br />
-        <asp:Button ID="Button2" runat="server" OnClick="Customer_Profile_Active_Account" Text="Customer Profiles Active Accounts" Height="36px" Width="358px" />
+        <asp:Button ID="Button1" runat="server" OnClick="All_customers_wallets" Text="All customers Wallets" Height="36px" Width="441px" />
+            <br />
+        <asp:Button ID="Button2" runat="server" Text="All E-shop and Redeemed voucher" Width="441px" OnClick="Eshop_Redeem_Vouchers" Height="36px" />
+            <br />
+        <asp:Button ID="Button3" runat="server" OnClick="Account_Payments" Text="Accounts payments" Height="36px" Width="441px" />
+            <br />
+        <asp:Button ID="Button4" runat="server" OnClick="Num_Cashback_walletId" Text="Number of cashback per Wallet ID" Height="36px" Width="441px" />
+            <br />
+        <asp:Button ID="Button5" runat="server" OnClick="Num_Accept_Payment_Trans" Text="Number Of Accepted Payment Transactions" Height="36px" Width="441px" />
+            <br />
+        <asp:Button ID="Button6" runat="server" OnClick="Cashback_wallet_planID" Text="Amount Of Cashback To Wallet (Using Plan Id)" Height="36px" Width="441px" />
+            <br />
+        <asp:Button ID="Button7" runat="server" OnClick="Avg_SentTrans_From_wallet_Date" Text="Average Sent Transaction From a certain Wallet (in a Date)" Height="36px" Width="441px" />
+            <br />
+        <asp:Button ID="Button8" runat="server" OnClick="Wallet_Using_MobileNo" Text="Get Wallet With Mobile Number" Height="36px" Width="441px" />
+            <br />
+        <asp:Button ID="Button9" runat="server" OnClick="Customer_Profile_Active_Account" Text="Customer Profiles Active Accounts" Height="36px" Width="441px" />
         </div>
-        <p>
-            &nbsp;</p>
+ 
     </form>
 </body>
 </html>

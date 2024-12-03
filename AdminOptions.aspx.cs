@@ -26,5 +26,44 @@ namespace Telecom_Web_App
 
         }
 
+        //2.2 h
+        protected void Eshop_Redeem_Vouchers(object sender, EventArgs e)
+        {
+
+        }
+        // 2.2 d
+        protected void Account_Payments(object sender, EventArgs e)
+        {
+
+        }
+        //2.2j
+        protected void Num_Cashback_walletId(object sender, EventArgs e)
+        {
+
+        }
+
+        // 2.3 f
+        protected void Num_Accept_Payment_Trans(object sender, EventArgs e)
+        {
+
+        }
+
+        //2.3 g
+        protected void Cashback_wallet_planID(object sender, EventArgs e)
+        {
+
+        }
+
+        //2.3 h
+        protected void Avg_SentTrans_From_wallet_Date(object sender, EventArgs e)
+        {
+
+        }
+
+        //2.3 i
+        protected void Wallet_Using_MobileNo(object sender, EventArgs e)
+        {
+
+        }
     }
 }
