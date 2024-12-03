@@ -72,6 +72,7 @@
     <Content Include="AdminOptions.aspx" />
     <Content Include="CustomerOptions.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="RemovePlanBenefits.aspx" />
     <Content Include="Result.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -113,6 +114,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemovePlanBenefits.aspx.cs">
+      <DependentUpon>RemovePlanBenefits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RemovePlanBenefits.aspx.designer.cs">
+      <DependentUpon>RemovePlanBenefits.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Result.aspx.cs">
       <DependentUpon>Result.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
