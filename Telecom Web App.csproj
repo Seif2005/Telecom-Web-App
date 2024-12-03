@@ -80,6 +80,7 @@
     <Content Include="ShowTopPayments.aspx" />
     <Content Include="SmsOffersByAccount.aspx" />
     <Content Include="UnresolvedTickets.aspx" />
+    <Content Include="Wallet_Using_MobileNo.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -196,6 +197,13 @@
     </Compile>
     <Compile Include="UnresolvedTickets.aspx.designer.cs">
       <DependentUpon>UnresolvedTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wallet_Using_MobileNo.aspx.cs">
+      <DependentUpon>Wallet_Using_MobileNo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wallet_Using_MobileNo.aspx.designer.cs">
+      <DependentUpon>Wallet_Using_MobileNo.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
