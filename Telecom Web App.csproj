@@ -75,10 +75,14 @@
     <Content Include="DisplayRemAmount.aspx" />
     <Content Include="DisplayUnSubPlans.aspx" />
     <Content Include="ExtraAmount.aspx" />
+    <Content Include="GetCashbackAmount.aspx" />
     <Content Include="HighestValueVoucher.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="RechargeBalance.aspx" />
+    <Content Include="RedeemVoucher.aspx" />
     <Content Include="RemovePlanBenefits.aspx" />
     <Content Include="Num_Accept_Payment_Trans.aspx" />
+    <Content Include="RenewSubscription.aspx" />
     <Content Include="Result.aspx" />
     <Content Include="ShowTopPayments.aspx" />
     <Content Include="SmsOffersByAccount.aspx" />
@@ -166,6 +170,13 @@
       <DependentUpon>ExtraAmount.aspx</DependentUpon>
     </Compile>
     <Compile Include="Generals.cs" />
+    <Compile Include="GetCashbackAmount.aspx.cs">
+      <DependentUpon>GetCashbackAmount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetCashbackAmount.aspx.designer.cs">
+      <DependentUpon>GetCashbackAmount.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HighestValueVoucher.aspx.cs">
       <DependentUpon>HighestValueVoucher.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -188,12 +199,33 @@
       <DependentUpon>Num_Accept_Payment_Trans.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RechargeBalance.aspx.cs">
+      <DependentUpon>RechargeBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RechargeBalance.aspx.designer.cs">
+      <DependentUpon>RechargeBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RedeemVoucher.aspx.cs">
+      <DependentUpon>RedeemVoucher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RedeemVoucher.aspx.designer.cs">
+      <DependentUpon>RedeemVoucher.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RemovePlanBenefits.aspx.cs">
       <DependentUpon>RemovePlanBenefits.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="RemovePlanBenefits.aspx.designer.cs">
       <DependentUpon>RemovePlanBenefits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RenewSubscription.aspx.cs">
+      <DependentUpon>RenewSubscription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RenewSubscription.aspx.designer.cs">
+      <DependentUpon>RenewSubscription.aspx</DependentUpon>
     </Compile>
     <Compile Include="Result.aspx.cs">
       <DependentUpon>Result.aspx</DependentUpon>
