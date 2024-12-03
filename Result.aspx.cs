@@ -11,7 +11,7 @@ namespace Telecom_Web_App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write("Success");
+            //Response.Write("Success <br/>");
             customerGridView.DataSource = Session["GridData"];
             customerGridView.DataBind();
         }
