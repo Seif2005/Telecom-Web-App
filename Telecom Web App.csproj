@@ -72,6 +72,7 @@
     <Content Include="RemovePlanBenefits.aspx" />
     <Content Include="Num_Accept_Payment_Trans.aspx" />
     <Content Include="Result.aspx" />
+    <Content Include="SmsOffersByAccount.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +133,13 @@
     </Compile>
     <Compile Include="Result.aspx.designer.cs">
       <DependentUpon>Result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SmsOffersByAccount.aspx.cs">
+      <DependentUpon>SmsOffersByAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SmsOffersByAccount.aspx.designer.cs">
+      <DependentUpon>SmsOffersByAccount.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
