@@ -68,15 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminOptions.aspx" />
-    <Content Include="CustomerAccounts.aspx" />
-    <Content Include="CustomerProfileActive.aspx" />
     <Content Include="GetShops.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Result.aspx" />
     <Content Include="Service5Months.aspx" />
-    <Content Include="Wallets_Customers.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminOptions.aspx.cs">
@@ -85,20 +81,6 @@
     </Compile>
     <Compile Include="AdminOptions.aspx.designer.cs">
       <DependentUpon>AdminOptions.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CustomerAccounts.aspx.cs">
-      <DependentUpon>CustomerAccounts.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CustomerAccounts.aspx.designer.cs">
-      <DependentUpon>CustomerAccounts.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CustomerProfileActive.aspx.cs">
-      <DependentUpon>CustomerProfileActive.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CustomerProfileActive.aspx.designer.cs">
-      <DependentUpon>CustomerProfileActive.aspx</DependentUpon>
     </Compile>
     <Compile Include="Generals.cs" />
     <Compile Include="GetShops.aspx.cs">
@@ -129,20 +111,6 @@
     </Compile>
     <Compile Include="Result.aspx.designer.cs">
       <DependentUpon>Result.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Wallets_Customers.aspx.cs">
-      <DependentUpon>Wallets_Customers.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Wallets_Customers.aspx.designer.cs">
-      <DependentUpon>Wallets_Customers.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

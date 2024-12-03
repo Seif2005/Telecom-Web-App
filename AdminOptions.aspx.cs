@@ -34,23 +34,35 @@ namespace Telecom_Web_App
         //2.2 h
         protected void Eshop_Redeem_Vouchers(object sender, EventArgs e)
         {
+            
+            DataTable data = GetData("SELECT * FROM E_shopVouchers");
+            Session["GridData"] = data;
+            Response.Redirect("/Result.aspx");
 
         }
         // 2.2 d
         protected void Account_Payments(object sender, EventArgs e)
         {
+            DataTable data = GetData("SELECT * FROM AccountPayments");
+            Session["GridData"] = data;
+            Response.Redirect("/Result.aspx");
 
         }
         //2.2j
         protected void Num_Cashback_walletId(object sender, EventArgs e)
         {
-
+            DataTable data = GetData("SELECT * FROM Num_of_cashback");
+            Session["GridData"] = data;
+            Response.Redirect("/Result.aspx");
         }
 
         // 2.3 f
         protected void Num_Accept_Payment_Trans(object sender, EventArgs e)
         {
-
+            //String mobile = Session["mobileNo"].ToString();
+            //DataTable data = GetData($"SELECT * FROM Account_Payment_Points {mobile}");
+            //Session["GridData"] = data;
+            //Response.Redirect("/Result.aspx");
         }
 
         //2.3 g
@@ -102,7 +114,7 @@ namespace Telecom_Web_App
 
         protected void AccountUsageByPlan(object sender, EventArgs e)
         {
-            // Add your code here
+            
         }
 
         protected void RemovePlanBenefits(object sender, EventArgs e)
