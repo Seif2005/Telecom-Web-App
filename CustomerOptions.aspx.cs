@@ -17,32 +17,38 @@ namespace Telecom_Web_App
         }
         protected void ViewServicePlans(object sender, EventArgs e)
         {
-            // Add your code here
+            DataTable data = GetData("Select * from allServicePlans");
+            Session["GridData"] = data;
+            Response.Redirect("/Result.aspx");
         }
 
         protected void Login(object sender, EventArgs e)
         {
-            // Add your code here
+            Response.Redirect("/Login.aspx");
         }
 
         protected void ViewConsumption(object sender, EventArgs e)
         {
-            // Add your code here
+            Response.Redirect("/Consumption.aspx");
         }
 
         protected void DisplayUnsubscribedPlans(object sender, EventArgs e)
         {
-            // Add your code here
+            Response.Redirect("/DisplayUnSubPlans.aspx");
         }
 
         protected void ShowActivePlanUsage(object sender, EventArgs e)
         {
-            // Add your code here
+            string mobileNumber = Session["mobileNo"].ToString();
+
+            DataTable data = GetData($"SELECT * FROM Usage_Plan_CurrentMonth('{mobileNumber}')");
+            Session["GridData"] = data;
+            Response.Redirect("/Result.aspx");
         }
 
         protected void ShowCashbackTransactions(object sender, EventArgs e)
         {
-            // Add your code here
+            Response.Redirect("Cashback_Wallet_Customer.aspx");
         }
         //mazen start
         protected void ViewActiveBenefits(object sender, EventArgs e)
