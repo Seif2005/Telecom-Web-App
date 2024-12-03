@@ -67,6 +67,8 @@
     <Content Include="AccountPlanDate.aspx" />
     <Content Include="AccountUsageByPlan.aspx" />
     <Content Include="AdminOptions.aspx" />
+    <Content Include="Avg_SentTrans_From_wallet_Date.aspx" />
+    <Content Include="Cashback_wallet_planID.aspx" />
     <Content Include="CustomerOptions.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="RemovePlanBenefits.aspx" />
@@ -96,6 +98,20 @@
     </Compile>
     <Compile Include="AdminOptions.aspx.designer.cs">
       <DependentUpon>AdminOptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Avg_SentTrans_From_wallet_Date.aspx.cs">
+      <DependentUpon>Avg_SentTrans_From_wallet_Date.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Avg_SentTrans_From_wallet_Date.aspx.designer.cs">
+      <DependentUpon>Avg_SentTrans_From_wallet_Date.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cashback_wallet_planID.aspx.cs">
+      <DependentUpon>Cashback_wallet_planID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cashback_wallet_planID.aspx.designer.cs">
+      <DependentUpon>Cashback_wallet_planID.aspx</DependentUpon>
     </Compile>
     <Compile Include="CustomerOptions.aspx.cs">
       <DependentUpon>CustomerOptions.aspx</DependentUpon>
