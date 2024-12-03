@@ -4,11 +4,49 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Query Result</title>
+    <style>
+        /* Center the "Results" label */
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+
+        /* Style the GridView */
+        .custom-gridview {
+            width: 70%; /* Make the table smaller */
+            margin-left: auto; /* Center horizontally */
+            margin-right: auto;
+            margin-top: 30px; /* Add space above the table */
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+
+        .custom-gridview th, .custom-gridview td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        .custom-gridview th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .custom-gridview tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .custom-gridview tr:hover {
+            background-color: #ddd;
+        }
+
+    </style>
+    <title>Result</title>
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:GridView ID="customerGridView" runat="server" AutoGenerateColumns="True">
+        <asp:GridView ID="customerGridView" CssClass="custom-gridview" runat="server" AutoGenerateColumns="True">
         </asp:GridView>
     </form>
 </body>

@@ -30,7 +30,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button20;
+        protected global::System.Web.UI.WebControls.LinkButton Button20;
 
         /// <summary>
         /// Button21 control.
@@ -39,7 +39,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button21;
+        protected global::System.Web.UI.WebControls.LinkButton Button21;
 
         /// <summary>
         /// Button22 control.
@@ -48,7 +48,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button22;
+        protected global::System.Web.UI.WebControls.LinkButton Button22;
 
         /// <summary>
         /// Button23 control.
@@ -57,7 +57,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button23;
+        protected global::System.Web.UI.WebControls.LinkButton Button23;
 
         /// <summary>
         /// Button24 control.
@@ -66,7 +66,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button24;
+        protected global::System.Web.UI.WebControls.LinkButton Button24;
 
         /// <summary>
         /// Button25 control.
@@ -75,7 +75,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button25;
+        protected global::System.Web.UI.WebControls.LinkButton Button25;
 
         /// <summary>
         /// Button26 control.
@@ -84,7 +84,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button26;
+        protected global::System.Web.UI.WebControls.LinkButton Button26;
 
         /// <summary>
         /// Button27 control.
@@ -93,7 +93,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button27;
+        protected global::System.Web.UI.WebControls.LinkButton Button27;
 
         /// <summary>
         /// Button28 control.
@@ -102,7 +102,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button28;
+        protected global::System.Web.UI.WebControls.LinkButton Button28;
 
         /// <summary>
         /// Button29 control.
@@ -111,7 +111,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button29;
+        protected global::System.Web.UI.WebControls.LinkButton Button29;
 
         /// <summary>
         /// Button30 control.
@@ -120,7 +120,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button30;
+        protected global::System.Web.UI.WebControls.LinkButton Button30;
 
         /// <summary>
         /// Button31 control.
@@ -129,7 +129,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button31;
+        protected global::System.Web.UI.WebControls.LinkButton Button31;
 
         /// <summary>
         /// Button32 control.
@@ -138,7 +138,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button32;
+        protected global::System.Web.UI.WebControls.LinkButton Button32;
 
         /// <summary>
         /// Button33 control.
@@ -147,7 +147,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button33;
+        protected global::System.Web.UI.WebControls.LinkButton Button33;
 
         /// <summary>
         /// Button34 control.
@@ -156,7 +156,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button34;
+        protected global::System.Web.UI.WebControls.LinkButton Button34;
 
         /// <summary>
         /// Button35 control.
@@ -165,7 +165,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button35;
+        protected global::System.Web.UI.WebControls.LinkButton Button35;
 
         /// <summary>
         /// Button36 control.
@@ -174,7 +174,7 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button36;
+        protected global::System.Web.UI.WebControls.LinkButton Button36;
 
         /// <summary>
         /// Button37 control.
@@ -183,6 +183,6 @@ namespace Telecom_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button37;
+        protected global::System.Web.UI.WebControls.LinkButton Button37;
     }
 }

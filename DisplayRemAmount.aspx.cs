@@ -42,7 +42,7 @@ namespace Telecom_Web_App
                     }
                     else
                     {
-                        Response.Redirect("CustomerOptions.aspx");
+                        Response.Redirect("DisplayRemAmount.aspx");
                     }
                 }
             }
