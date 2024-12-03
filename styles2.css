@@ -1,0 +1,92 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*    height: 100vh;*/
+    background-color: #f4f4f9;
+    position: relative;
+}
+
+/* Logo at the top left corner */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Title style */
+.title {
+    font-size: 48px;
+    color: #333;
+    margin-top: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Grid items (buttons) */
+.grid-item {
+    width: 100%;
+    height: 100%; /* #007bf->Blue , #4CAF50->Green */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+/* Icon and text container */
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the icon */
+.grid-item i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Style for the text */
+.button-text {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Hover effect for buttons */
+.grid-item:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Active effect for buttons */
+.grid-item:active {
+    background-color: #004085;
+    transform: scale(1);
+}
