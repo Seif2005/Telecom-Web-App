@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel="stylesheet" href="styles1.css"/>
     <title></title>
 </head>
 <body>
@@ -12,14 +13,10 @@
             
             <h2>Redeem Voucher</h2>
             <asp:Label ID="lblMobileNumber" runat="server" Text="Mobile Number: "></asp:Label>
-            <br /><br />
 
             <label for="txtVoucherId">Enter Voucher ID:</label>
             <asp:TextBox ID="txtVoucherId" runat="server" CssClass="form-control" />
-            <br />
-
             <asp:Button ID="btnRedeem" runat="server" Text="Redeem Voucher" OnClick="btnRedeem_Click" CssClass="btn btn-primary" />
-            <br /><br />
 
             <asp:Label ID="lblResult" runat="server" ForeColor="Red" />
         </div>

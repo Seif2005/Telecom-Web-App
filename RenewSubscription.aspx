@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel="stylesheet" href="styles1.css"/>
     <title></title>
 </head>
 <body>
@@ -12,16 +13,13 @@
             <h2>Renew Subscription</h2>
         
         <label>Mobile Number:</label>
-        <asp:Label ID="lblMobileNumber" runat="server" Text=""></asp:Label><br /><br />
-
+        <asp:Label ID="lblMobileNumber" runat="server" Text=""></asp:Label>
         <label>Plan ID:</label>
             <asp:TextBox ID="txtPlanId" runat="server"></asp:TextBox>
-            <br /><br />
 
 
         <label>Amount:</label>
-        <asp:TextBox ID="txtAmount" runat="server"></asp:TextBox><br /><br />
-
+        <asp:TextBox ID="txtAmount" runat="server"></asp:TextBox>
         <label>Payment Method:</label>
         <asp:DropDownList ID="dropDPaymentMethod" runat="server">
             <asp:ListItem Text="Credit " Value="Credit "></asp:ListItem>

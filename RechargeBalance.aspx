@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel="stylesheet" href="styles1.css"/>
     <title></title>
 </head>
 <body>
@@ -12,13 +13,10 @@
             <h2>Initiate Balance Payment</h2>
             
             <label>Mobile Number:</label>
-            <asp:Label ID="lblMobileNumber" runat="server" Text=""></asp:Label><br /><br />
-
-            <br />
+            <asp:Label ID="lblMobileNumber" runat="server" Text=""></asp:Label>
 
             <label for="txtAmount">Amount:</label>
             <asp:TextBox ID="txtAmount" runat="server" />
-            <br />
 
             <label for="ddlPaymentMethod">Payment Method:</label>
             <asp:DropDownList ID="ddlPaymentMethod" runat="server">
@@ -26,10 +24,8 @@
                 <asp:ListItem Text="Credit " Value="Credit " />
                 <asp:ListItem Text="Cash" Value="Cash" />
             </asp:DropDownList>
-            <br />
 
             <asp:Button ID="btnSubmit" runat="server" Text="Initiate Payment" OnClick="btnSubmit_Click" />
-            <br />
 
             <asp:Label ID="lblResult" runat="server" />
         </div>

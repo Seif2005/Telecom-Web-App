@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel="stylesheet" href="styles1.css" />
     <title></title>
 </head>
 <body>
@@ -12,7 +13,6 @@
             <h2>Check Wallet</h2>
             <asp:Label ID="lblmobileNo" runat="server" Text="Mobile Number: "></asp:Label>
             <asp:TextBox ID="txtMobile" runat="server"></asp:TextBox>
-            <br /><br />
             <asp:Button ID="btnSubmit" runat="server" Text="Check" OnClick="checkWallet" />
         </div>
     </form>
