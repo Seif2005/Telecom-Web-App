@@ -58,7 +58,7 @@ namespace Telecom_Web_App
                             //creating Session
                             Session["mobileNo"] = mobile;
                             Session["userType"] = "customer";
-                            Response.Redirect("/RenewSubscription.aspx");
+                            Response.Redirect("/CustomerOptions.aspx");
                         }
                         else
                         {

@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminOptions.aspx" />
+    <Content Include="CustomerOptions.aspx" />
     <Content Include="GetShops.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Result.aspx" />
@@ -81,6 +82,13 @@
     </Compile>
     <Compile Include="AdminOptions.aspx.designer.cs">
       <DependentUpon>AdminOptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerOptions.aspx.cs">
+      <DependentUpon>CustomerOptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerOptions.aspx.designer.cs">
+      <DependentUpon>CustomerOptions.aspx</DependentUpon>
     </Compile>
     <Compile Include="Generals.cs" />
     <Compile Include="GetShops.aspx.cs">
