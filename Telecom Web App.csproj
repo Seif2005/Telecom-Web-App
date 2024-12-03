@@ -68,11 +68,16 @@
     <Content Include="AccountUsageByPlan.aspx" />
     <Content Include="AdminOptions.aspx" />
     <Content Include="CustomerOptions.aspx" />
+    <Content Include="DisplayRemAmount.aspx" />
+    <Content Include="ExtraAmount.aspx" />
+    <Content Include="HighestValueVoucher.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="RemovePlanBenefits.aspx" />
     <Content Include="Num_Accept_Payment_Trans.aspx" />
     <Content Include="Result.aspx" />
+    <Content Include="ShowTopPayments.aspx" />
     <Content Include="SmsOffersByAccount.aspx" />
+    <Content Include="UnresolvedTickets.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -104,7 +109,28 @@
     <Compile Include="CustomerOptions.aspx.designer.cs">
       <DependentUpon>CustomerOptions.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DisplayRemAmount.aspx.cs">
+      <DependentUpon>DisplayRemAmount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisplayRemAmount.aspx.designer.cs">
+      <DependentUpon>DisplayRemAmount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraAmount.aspx.cs">
+      <DependentUpon>ExtraAmount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraAmount.aspx.designer.cs">
+      <DependentUpon>ExtraAmount.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Generals.cs" />
+    <Compile Include="HighestValueVoucher.aspx.cs">
+      <DependentUpon>HighestValueVoucher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HighestValueVoucher.aspx.designer.cs">
+      <DependentUpon>HighestValueVoucher.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -134,12 +160,26 @@
     <Compile Include="Result.aspx.designer.cs">
       <DependentUpon>Result.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ShowTopPayments.aspx.cs">
+      <DependentUpon>ShowTopPayments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowTopPayments.aspx.designer.cs">
+      <DependentUpon>ShowTopPayments.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SmsOffersByAccount.aspx.cs">
       <DependentUpon>SmsOffersByAccount.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="SmsOffersByAccount.aspx.designer.cs">
       <DependentUpon>SmsOffersByAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnresolvedTickets.aspx.cs">
+      <DependentUpon>UnresolvedTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnresolvedTickets.aspx.designer.cs">
+      <DependentUpon>UnresolvedTickets.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

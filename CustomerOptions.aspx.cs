@@ -44,35 +44,37 @@ namespace Telecom_Web_App
         {
             // Add your code here
         }
-
+        //mazen start
         protected void ViewActiveBenefits(object sender, EventArgs e)
         {
-            // Add your code here
+            DataTable data = GetData("SELECT * FROM allBenefits");
+            Session["GridData"] = data;
+            Response.Redirect("/Result.aspx");
         }
 
         protected void ShowUnresolvedTickets(object sender, EventArgs e)
         {
-            // Add your code here
+            Response.Redirect("/UnresolvedTickets.aspx");
         }
 
         protected void ShowHighestValueVoucher(object sender, EventArgs e)
         {
-            // Add your code here
+            Response.Redirect("/HighestValueVoucher.aspx");
         }
 
         protected void DisplayRemainingPaymentAmount(object sender, EventArgs e)
         {
-            // Add your code here
+            Response.Redirect("/DisplayRemAmount.aspx");
         }
 
         protected void DisplayExtraPaymentAmount(object sender, EventArgs e)
         {
-            // Add your code here
+            Response.Redirect("/ExtraAmount.aspx");
         }
 
         protected void ShowTop10Payments(object sender, EventArgs e)
         {
-            // Add your code here
+            Response.Redirect("/ShowTopPayments.aspx");
         }
 
         protected void ViewShops(object sender, EventArgs e)
