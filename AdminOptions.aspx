@@ -26,6 +26,22 @@
         <asp:Button ID="Button8" runat="server" OnClick="Wallet_Using_MobileNo" Text="Get Wallet With Mobile Number" Height="36px" Width="441px" />
             <br />
         <asp:Button ID="Button9" runat="server" OnClick="Customer_Profile_Active_Account" Text="Customer Profiles Active Accounts" Height="36px" Width="441px" />
+            <br />
+        <asp:Button ID="Button10" runat="server" OnClick="ViewStoresAndVouchers" Text="View Stores & Vouchers" Height="36px" Width="441px" />
+            <br />
+        <asp:Button ID="Button11" runat="server" OnClick="ResolvedTicketsDetails" Text="Resolved Tickets Details" Height="36px" Width="441px" />
+            <br />
+        <asp:Button ID="Button12" runat="server" OnClick="CustomerAccountsAndPlans" Text="Customer Accounts & Plans" Height="36px" Width="441px" />
+            <br />
+        <asp:Button ID="Button13" runat="server" OnClick="ListAccountsByPlanAndDate" Text="List Accounts by Plan & Date" Height="36px" Width="441px" />
+            <br />
+        <asp:Button ID="Button14" runat="server" OnClick="AccountUsageByPlan" Text="Account Usage by Plan" Height="36px" Width="441px" />
+            <br />
+        <asp:Button ID="Button15" runat="server" OnClick="RemovePlanBenefits" Text="Remove Plan Benefits" Height="36px" Width="441px" />
+            <br />
+        <asp:Button ID="Button16" runat="server" OnClick="SmsOffersByAccount" Text="SMS Offers by Account" Height="36px" Width="441px" />
+            <br />
+
         </div>
  
     </form>

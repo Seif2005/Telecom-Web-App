@@ -65,5 +65,41 @@ namespace Telecom_Web_App
         {
 
         }
+        //new part
+        protected void ViewStoresAndVouchers(object sender, EventArgs e)
+        {
+            // Add your code here
+        }
+
+        protected void ResolvedTicketsDetails(object sender, EventArgs e)
+        {
+            // Add your code here
+        }
+
+        protected void CustomerAccountsAndPlans(object sender, EventArgs e)
+        {
+            // Add your code here
+        }
+
+        protected void ListAccountsByPlanAndDate(object sender, EventArgs e)
+        {
+            // Add your code here
+        }
+
+        protected void AccountUsageByPlan(object sender, EventArgs e)
+        {
+            // Add your code here
+        }
+
+        protected void RemovePlanBenefits(object sender, EventArgs e)
+        {
+            // Add your code here
+        }
+
+        protected void SmsOffersByAccount(object sender, EventArgs e)
+        {
+            // Add your code here
+        }
+
     }
 }
