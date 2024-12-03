@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AccountPlanDate.aspx" />
+    <Content Include="AccountUsageByPlan.aspx" />
     <Content Include="AdminOptions.aspx" />
     <Content Include="CustomerOptions.aspx" />
     <Content Include="Login.aspx" />
@@ -81,6 +82,13 @@
     </Compile>
     <Compile Include="AccountPlanDate.aspx.designer.cs">
       <DependentUpon>AccountPlanDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccountUsageByPlan.aspx.cs">
+      <DependentUpon>AccountUsageByPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountUsageByPlan.aspx.designer.cs">
+      <DependentUpon>AccountUsageByPlan.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminOptions.aspx.cs">
       <DependentUpon>AdminOptions.aspx</DependentUpon>
