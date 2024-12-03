@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static Telecom_Web_App.Helpers;
 
 namespace Telecom_Web_App
 {
@@ -17,12 +19,15 @@ namespace Telecom_Web_App
 
         protected void All_customers_wallets(object sender, EventArgs e)
         {
-            Response.Redirect("/Wallets_Customers.aspx");
-
+            DataTable data = GetData("Select * from CustomerWallet");
+            Session["GridData"] = data;
+            Response.Redirect("/Result.aspx");
         }
         protected void Customer_Profile_Active_Account(object sender, EventArgs e)
         {
-            Response.Redirect("/CustomerProfileActive.aspx");
+            DataTable data = GetData("SELECT * FROM allCustomerAccounts");
+            Session["GridData"] = data;
+            Response.Redirect("/Result.aspx");
 
         }
 
@@ -68,22 +73,31 @@ namespace Telecom_Web_App
         //new part
         protected void ViewStoresAndVouchers(object sender, EventArgs e)
         {
-            // Add your code here
+            DataTable data = GetData("SELECT * FROM PhysicalStoreVouchers");
+            Session["GridData"] = data;
+            Response.Redirect("/Result.aspx");
         }
 
         protected void ResolvedTicketsDetails(object sender, EventArgs e)
         {
-            // Add your code here
+            DataTable data = GetData("SELECT * FROM allResolvedTickets");
+            Session["GridData"] = data;
+            Response.Redirect("/Result.aspx");
         }
 
         protected void CustomerAccountsAndPlans(object sender, EventArgs e)
         {
-            // Add your code here
+            DataTable data = GetData("EXEC Account_Plan ");
+            Session["GridData"] = data;
+            Response.Redirect("/Result.aspx");
         }
 
         protected void ListAccountsByPlanAndDate(object sender, EventArgs e)
         {
-            // Add your code here
+            //incomplete
+            //DataTable data = GetData("SELECT * FROM dbo.Account_Plan_date()");
+            //Session["GridData"] = data;
+            //Response.Redirect("/Result.aspx");
         }
 
         protected void AccountUsageByPlan(object sender, EventArgs e)

@@ -27,7 +27,7 @@
             <br />
         <asp:Button ID="Button9" runat="server" OnClick="Customer_Profile_Active_Account" Text="Customer Profiles Active Accounts" Height="36px" Width="441px" />
             <br />
-        <asp:Button ID="Button10" runat="server" OnClick="ViewStoresAndVouchers" Text="View Stores & Vouchers" Height="36px" Width="441px" />
+        <asp:Button ID="Button10" runat="server" OnClick="ViewStoresAndVouchers" Text="View Physical Stores & Vouchers" Height="36px" Width="441px" />
             <br />
         <asp:Button ID="Button11" runat="server" OnClick="ResolvedTicketsDetails" Text="Resolved Tickets Details" Height="36px" Width="441px" />
             <br />
