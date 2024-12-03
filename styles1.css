@@ -1,0 +1,101 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Form container styling */
+form {
+    border: 3px solid #4CAF50;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    text-align: left;
+}
+
+/* Specific label container */
+.form-label {
+    text-align: left;
+    display: block;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+form input[type="text"] {
+    text-align: left;
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styling for date input fields */
+form input[type="date"] {
+    text-align: left;
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+span {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Button styling */
+form input[type="submit"],
+form button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    /* Button hover effect */
+    form input[type="submit"]:hover,
+    form button:hover {
+        background-color: #0056b3;
+    }

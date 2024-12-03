@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
@@ -33,7 +34,15 @@ namespace Telecom_Web_App
                     {
                         object result1 = command2.ExecuteScalar();
                         int output = int.Parse(result1.ToString());
-                        Response.Write(output);
+                        DataTable table = new DataTable("Customers");
+                        table.Columns.Add("Column", typeof(int));
+                        table.Rows.Add(output);
+                        Session["GridData"] = table;
+                        Response.Redirect("/Result.aspx");
+                    }
+                    else
+                    {
+                        Response.Redirect("DisplayRemAmount.aspx");
                     }
                 }
             }
