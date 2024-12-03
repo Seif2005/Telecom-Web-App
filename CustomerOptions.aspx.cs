@@ -97,23 +97,22 @@ namespace Telecom_Web_App
 
         protected void RenewSubscription(object sender, EventArgs e)
         {
-            // Add your code here
+            Response.Redirect("RenewSubscription.aspx");
         }
 
         protected void GetCashbackAmount(object sender, EventArgs e)
         {
-            // Add your code here
+            Response.Redirect("GetCashbackAmount.aspx");
         }
 
         protected void RechargeBalance(object sender, EventArgs e)
         {
-            // Add your code here
+            Response.Redirect("RechargeBalance.aspx");
         }
 
         protected void RedeemVoucher(object sender, EventArgs e)
         {
-            // Add your code here
+            Response.Redirect("RedeemVoucher.aspx");
         }
-
     }
 }
