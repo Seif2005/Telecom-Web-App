@@ -23,42 +23,52 @@ namespace Telecom_Web_App
 
             String mobile = txtMobileNo.Text;
             String pass = txtPassword.Text;
-            //check if admin
-            if (mobile == "admin"&&pass == "admin")
+            if (mobile == "" || pass == "")
             {
-                Response.Redirect("/AdminOptions.aspx");
+                Response.Write("Please Enter Mobile Number and Password.");
             }
-            //Response.Write(mobile + "<br/>");
-            //Response.Write(pass + "<br/>");
-
-            using (SqlConnection conn = new SqlConnection(connStr))
+            else
             {
-                conn.Open();
-                //Response.Write("Connection successful<br />");
-
-                using (SqlCommand command = new SqlCommand("SELECT dbo.AccountLoginValidation(@mobile_num, @pass)", conn))
+                //check if admin
+                if (mobile == "admin" && pass == "admin")
                 {
-                    // Add the parameters required by the function
-                    command.Parameters.AddWithValue("@mobile_num", mobile); // Replace with actual mobile number
-                    command.Parameters.AddWithValue("@pass", pass); // Replace with actual password
+                    Session["userType"] = "admin";
+                    Response.Redirect("/AdminOptions.aspx");
+                }
+                //Response.Write(mobile + "<br/>");
+                //Response.Write(pass + "<br/>");
 
-                    // Execute the command and get the scalar value
-                    object result = command.ExecuteScalar();
-                    bool loginValid = (bool)result;
-                    // Process the result
-                    if (loginValid)
+                using (SqlConnection conn = new SqlConnection(connStr))
+                {
+                    conn.Open();
+                    //Response.Write("Connection successful<br />");
+
+                    using (SqlCommand command = new SqlCommand("SELECT dbo.AccountLoginValidation(@mobile_num, @pass)", conn))
                     {
-                        //creating Session
-                        Session["mobileNo"] = mobile;
-                        Response.Redirect("/RenewSubscription.aspx");
+                        // Add the parameters required by the function
+                        command.Parameters.AddWithValue("@mobile_num", mobile); // Replace with actual mobile number
+                        command.Parameters.AddWithValue("@pass", pass); // Replace with actual password
+
+                        // Execute the command and get the scalar value
+                        object result = command.ExecuteScalar();
+                        bool loginValid = (bool)result;
+                        // Process the result
+                        if (loginValid)
+                        {
+                            //creating Session
+                            Session["mobileNo"] = mobile;
+                            Session["userType"] = "customer";
+                            Response.Redirect("/RenewSubscription.aspx");
+                        }
+                        else
+                        {
+                            Response.Write("Invalid Login");
+                        }
+                        conn.Close();
                     }
-                    else
-                    {
-                        Response.Write("Invalid Login");
-                    }
-                    conn.Close();
                 }
             }
+            
         }
     }
 }

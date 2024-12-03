@@ -72,7 +72,6 @@
     <Content Include="CustomerProfileActive.aspx" />
     <Content Include="GetShops.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="RenewSubscription.aspx" />
     <Content Include="Result.aspx" />
     <Content Include="Service5Months.aspx" />
     <Content Include="Wallets_Customers.aspx" />
@@ -105,13 +104,6 @@
     <Compile Include="GetShops.aspx.cs">
       <DependentUpon>GetShops.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RenewSubscription.aspx.cs">
-      <DependentUpon>RenewSubscription.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RenewSubscription.aspx.designer.cs">
-      <DependentUpon>RenewSubscription.aspx</DependentUpon>
     </Compile>
     <Compile Include="Service5Months.aspx.cs">
       <DependentUpon>Service5Months.aspx</DependentUpon>
