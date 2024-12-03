@@ -25,6 +25,9 @@
             <br />
         <asp:Button ID="Button8" runat="server" OnClick="Wallet_Using_MobileNo" Text="Get Wallet With Mobile Number" Height="36px" Width="441px" />
             <br />
+        <asp:Button ID="Button17" runat="server" Text="Update Points" OnClick="UpdatePoints" Height="36px" Width="441px"/> <br />
+            <br />
+            <br />
         <asp:Button ID="Button9" runat="server" OnClick="Customer_Profile_Active_Account" Text="Customer Profiles Active Accounts" Height="36px" Width="441px" />
             <br />
         <asp:Button ID="Button10" runat="server" OnClick="ViewStoresAndVouchers" Text="View Physical Stores & Vouchers" Height="36px" Width="441px" />

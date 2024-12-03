@@ -23,22 +23,13 @@ namespace Telecom_Web_App
             Session["GridData"] = data;
             Response.Redirect("/Result.aspx");
         }
-        protected void Customer_Profile_Active_Account(object sender, EventArgs e)
-        {
-            DataTable data = GetData("SELECT * FROM allCustomerAccounts");
-            Session["GridData"] = data;
-            Response.Redirect("/Result.aspx");
-
-        }
 
         //2.2 h
         protected void Eshop_Redeem_Vouchers(object sender, EventArgs e)
         {
-            
             DataTable data = GetData("SELECT * FROM E_shopVouchers");
             Session["GridData"] = data;
             Response.Redirect("/Result.aspx");
-
         }
         // 2.2 d
         protected void Account_Payments(object sender, EventArgs e)
@@ -46,7 +37,6 @@ namespace Telecom_Web_App
             DataTable data = GetData("SELECT * FROM AccountPayments");
             Session["GridData"] = data;
             Response.Redirect("/Result.aspx");
-
         }
         //2.2j
         protected void Num_Cashback_walletId(object sender, EventArgs e)
@@ -59,30 +49,40 @@ namespace Telecom_Web_App
         // 2.3 f
         protected void Num_Accept_Payment_Trans(object sender, EventArgs e)
         {
-            //String mobile = Session["mobileNo"].ToString();
-            //DataTable data = GetData($"SELECT * FROM Account_Payment_Points {mobile}");
-            //Session["GridData"] = data;
-            //Response.Redirect("/Result.aspx");
+            Response.Redirect("Num_Accept_Payment_Trans.aspx");
         }
 
         //2.3 g
         protected void Cashback_wallet_planID(object sender, EventArgs e)
         {
-
+            Response.Redirect("Cashback_wallet_planID.aspx");
         }
 
         //2.3 h
         protected void Avg_SentTrans_From_wallet_Date(object sender, EventArgs e)
         {
-
+            Response.Redirect("Avg_SentTrans_From_wallet_Date.aspx");
         }
 
         //2.3 i
         protected void Wallet_Using_MobileNo(object sender, EventArgs e)
         {
-
+            Response.Redirect("Wallet_Using_MobileNo.aspx");
         }
+
+        protected void UpdatePoints(object sender, EventArgs e)
+        {
+            Response.Redirect("UpdatePoints.aspx");
+        }
+
         //new part
+        protected void Customer_Profile_Active_Account(object sender, EventArgs e)
+        {
+            DataTable data = GetData("SELECT * FROM allCustomerAccounts");
+            Session["GridData"] = data;
+            Response.Redirect("/Result.aspx");
+        }
+
         protected void ViewStoresAndVouchers(object sender, EventArgs e)
         {
             DataTable data = GetData("SELECT * FROM PhysicalStoreVouchers");
@@ -106,25 +106,22 @@ namespace Telecom_Web_App
 
         protected void ListAccountsByPlanAndDate(object sender, EventArgs e)
         {
-            //incomplete
-            //DataTable data = GetData("SELECT * FROM dbo.Account_Plan_date()");
-            //Session["GridData"] = data;
-            //Response.Redirect("/Result.aspx");
+            Response.Redirect("AccountPlanDate.aspx");
         }
 
         protected void AccountUsageByPlan(object sender, EventArgs e)
         {
-            
+            Response.Redirect("AccountUsageByPlan.aspx");
         }
 
         protected void RemovePlanBenefits(object sender, EventArgs e)
         {
-            // Add your code here
+            Response.Redirect("RemovePlanBenefits.aspx");
         }
 
         protected void SmsOffersByAccount(object sender, EventArgs e)
         {
-            // Add your code here
+            Response.Redirect("SmsOffersByAccount.aspx");
         }
 
     }
