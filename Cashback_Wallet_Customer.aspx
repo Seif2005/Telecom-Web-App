@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico"/>
     <title></title>
 </head>
 <body>
