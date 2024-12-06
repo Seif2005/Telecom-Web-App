@@ -45,7 +45,7 @@ namespace Telecom_Web_App
                         }
                         else
                         {
-                            Response.Write("please Enter a Valid wallet id and a Plan id");
+                            Response.Write("Please Enter Valid Wallet Id and Dates.");
                         }
                     }
                 }

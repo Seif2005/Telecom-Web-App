@@ -20,29 +20,35 @@ namespace Telecom_Web_App
         protected void CheckSMS(object sender, EventArgs e)
         {
             String mobile = txtMobileNo.Text;
-
-            DataTable Data = new DataTable();
-            string connStr = WebConfigurationManager.ConnectionStrings["dbConnection"].ToString();
-
-            using (SqlConnection connection = new SqlConnection(connStr))
+            if (mobile.Length != 11)
             {
-                connection.Open();
+                Response.Write("Incorrect Mobile Number");
+            }
+            else
+            {
+                DataTable Data = new DataTable();
+                string connStr = WebConfigurationManager.ConnectionStrings["dbConnection"].ToString();
 
-                string sql = "SELECT * FROM Account_SMS_Offers(@mobile)";
-
-                using (SqlCommand command = new SqlCommand(sql, connection))
+                using (SqlConnection connection = new SqlConnection(connStr))
                 {
-                    command.Parameters.AddWithValue("@mobile", mobile);
+                    connection.Open();
 
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    string sql = "SELECT * FROM Account_SMS_Offers(@mobile)";
+
+                    using (SqlCommand command = new SqlCommand(sql, connection))
                     {
-                        adapter.Fill(Data);
+                        command.Parameters.AddWithValue("@mobile", mobile);
+
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            adapter.Fill(Data);
+                        }
                     }
                 }
-            }
 
-            Session["GridData"] = Data;
-            Response.Redirect("/Result.aspx");
+                Session["GridData"] = Data;
+                Response.Redirect("/Result.aspx");
+            }
         }
     }
 }

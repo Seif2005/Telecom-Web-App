@@ -60,7 +60,7 @@ namespace Telecom_Web_App
                     Response.Write(Rows_affected);
                     if (Rows_affected == -1)
                     {
-                        return "You do not have enough points to redeem this voucher.";
+                        return "You do not have enough points to redeem this voucher or wrong voucher ID.";
                     }
                     else
                     {

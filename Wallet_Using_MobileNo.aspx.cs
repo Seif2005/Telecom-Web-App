@@ -18,9 +18,9 @@ namespace Telecom_Web_App
         {
             String mobile = txtMobile.Text;
             string connStr = WebConfigurationManager.ConnectionStrings["dbConnection"].ToString();
-            if (string.IsNullOrEmpty(mobile))
+            if (mobile.Length!=11)
             {
-                Response.Write("please Enter a Mobile Number.");
+                Response.Write("Please Enter a Valid Mobile Number.");
             }
             else
             {
