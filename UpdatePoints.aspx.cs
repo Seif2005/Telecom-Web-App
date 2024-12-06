@@ -22,24 +22,29 @@ namespace Telecom_Web_App
         protected void Retrive_total_points(object sender, EventArgs e)
         {
             String mobileNum = Mobile_No.Text;
-            DataTable Data = new DataTable();
-            string connStr = WebConfigurationManager.ConnectionStrings["dbConnection"].ToString();
-            using (SqlConnection connection = new SqlConnection(connStr))
+            if (mobileNum.Length != 11) {
+                Response.Write("Incorrect Mobile Number");
+            }else
             {
-                connection.Open();
-
-                using (SqlCommand command = new SqlCommand("Total_Points_Account", connection))
+                DataTable Data = new DataTable();
+                string connStr = WebConfigurationManager.ConnectionStrings["dbConnection"].ToString();
+                using (SqlConnection connection = new SqlConnection(connStr))
                 {
-                    command.CommandType = CommandType.StoredProcedure;
+                    connection.Open();
 
-                    command.Parameters.AddWithValue("@mobile_num", mobileNum);
-                    command.ExecuteNonQuery();
+                    using (SqlCommand command = new SqlCommand("Total_Points_Account", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("@mobile_num", mobileNum);
+                        command.ExecuteNonQuery();
+                    }
+                    Data = GetData("SELECT * FROM customer_account");
                 }
-                Data = GetData("SELECT * FROM customer_account");
-            }
 
-            Session["GridData"] = Data;
-            Response.Redirect("/Result.aspx");
+                Session["GridData"] = Data;
+                Response.Redirect("/Result.aspx");
+            }
         }
     }
 }

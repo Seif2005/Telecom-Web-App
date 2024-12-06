@@ -22,27 +22,33 @@ namespace Telecom_Web_App
             //Benefits_Account 
             String mobile = txtMobileno.Text;
             String planId = txtPlanID.Text;
-            DataTable Data = new DataTable();
-            string connStr = WebConfigurationManager.ConnectionStrings["dbConnection"].ToString();
-
-            using (SqlConnection connection = new SqlConnection(connStr))
+            if(mobile.Length != 11)
             {
-                connection.Open();
-
-                using (SqlCommand command = new SqlCommand("Benefits_Account", connection))
-                {
-                    command.CommandType = CommandType.StoredProcedure;
-
-                    command.Parameters.AddWithValue("@mobile_num", mobile);
-                    command.Parameters.AddWithValue("@plan_id", int.Parse(planId));
-                    command.ExecuteNonQuery();
-                }
-                Data = GetData("SELECT * FROM Benefits");
+                Response.Write("Invalid Mobile Number");
             }
+            else
+            {
+                DataTable Data = new DataTable();
+                string connStr = WebConfigurationManager.ConnectionStrings["dbConnection"].ToString();
 
-            Session["GridData"] = Data;
-            Response.Redirect("/Result.aspx");
+                using (SqlConnection connection = new SqlConnection(connStr))
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand("Benefits_Account", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("@mobile_num", mobile);
+                        command.Parameters.AddWithValue("@plan_id", int.Parse(planId));
+                        command.ExecuteNonQuery();
+                    }
+                    Data = GetData("SELECT * FROM Benefits");
+                }
+
+                Session["GridData"] = Data;
+                Response.Redirect("/Result.aspx");
+            }
         }
-
     }
 }
