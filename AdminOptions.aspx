@@ -24,6 +24,11 @@
             margin: 0;
             border-radius: 0;
         }
+
+        a:focus, a:hover {
+            color: white !important;
+            text-decoration: none !important;
+        }
     </style>
 </head>
 <body>
