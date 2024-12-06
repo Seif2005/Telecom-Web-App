@@ -76,6 +76,7 @@
     <Content Include="DisplayUnSubPlans.aspx" />
     <Content Include="ExtraAmount.aspx" />
     <Content Include="GetCashbackAmount.aspx" />
+    <Content Include="GoHome.aspx" />
     <Content Include="HighestValueVoucher.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="RechargeBalance.aspx" />
@@ -177,6 +178,13 @@
     </Compile>
     <Compile Include="GetCashbackAmount.aspx.designer.cs">
       <DependentUpon>GetCashbackAmount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoHome.aspx.cs">
+      <DependentUpon>GoHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoHome.aspx.designer.cs">
+      <DependentUpon>GoHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="HighestValueVoucher.aspx.cs">
       <DependentUpon>HighestValueVoucher.aspx</DependentUpon>
