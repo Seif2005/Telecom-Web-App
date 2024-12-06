@@ -23,25 +23,20 @@ namespace Telecom_Web_App
 
             String mobile = txtMobileNo.Text;
             String pass = txtPassword.Text;
-            if (mobile == "" || pass == "")
+            if (mobile == "admin" && pass == "admin")
             {
-                Response.Write("Please Enter Mobile Number and Password.");
+                Session["userType"] = "admin";
+                Response.Redirect("/AdminOptions.aspx");
+            }
+            if (mobile == "" || pass == ""||mobile.Length!=11)
+            {
+                Response.Write("Please Enter Valid Mobile Number and Password.");
             }
             else
             {
-                //check if admin
-                if (mobile == "admin" && pass == "admin")
-                {
-                    Session["userType"] = "admin";
-                    Response.Redirect("/AdminOptions.aspx");
-                }
-                //Response.Write(mobile + "<br/>");
-                //Response.Write(pass + "<br/>");
-
                 using (SqlConnection conn = new SqlConnection(connStr))
                 {
                     conn.Open();
-                    //Response.Write("Connection successful<br />");
 
                     using (SqlCommand command = new SqlCommand("SELECT dbo.AccountLoginValidation(@mobile_num, @pass)", conn))
                     {

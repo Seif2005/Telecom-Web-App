@@ -5,12 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link rel="stylesheet" href="styles1.css"/>
-    <title></title>
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico"/>
+    <title>Telecom Co. - Transactions Average </title>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <h2>Wallet Id and date Specification  </h2>
+            <h2>Wallet Id and date Specification </h2>
             <asp:Label ID="lblWalletId" runat="server" Text="Wallet ID: "></asp:Label>
             <asp:TextBox ID="txtWalletId" runat="server"></asp:TextBox>
             <asp:Label ID="lblTime" runat="server" Text=" From Date:"></asp:Label>

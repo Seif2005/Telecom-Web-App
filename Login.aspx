@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico"/>
         <style>
             /* General Page Styling */
             body {
@@ -70,7 +71,7 @@
                 background-color: #0056b3;
             }
     </style>
-    <title>Login</title>
+    <title>Telecom Co. - Login</title>
 </head>
 <body>
     <form id="form1" class="login-form" runat="server">

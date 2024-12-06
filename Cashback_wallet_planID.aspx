@@ -2,7 +2,8 @@
 
 <head runat="server">
     <link rel="stylesheet" href="styles1.css"/>
-    <title></title>
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico"/>
+    <title>Telecom Co. - Cashback Wallet</title>
 </head>
 
 <html xmlns="http://www.w3.org/1999/xhtml"><body><form id="form1" runat="server">

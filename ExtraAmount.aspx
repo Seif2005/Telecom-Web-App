@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link rel="stylesheet" href="styles1.css"/>
-    <title></title>
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico"/>
+    <title>Telecom Co. - Extra Amount</title>
 </head>
 <body>
     <form id="form1" runat="server">

@@ -86,6 +86,7 @@
     <Content Include="Result.aspx" />
     <Content Include="ShowTopPayments.aspx" />
     <Content Include="SmsOffersByAccount.aspx" />
+    <Content Include="static\favicon.ico" />
     <Content Include="UnresolvedTickets.aspx" />
     <Content Include="UpdatePoints.aspx" />
     <Content Include="Wallet_Using_MobileNo.aspx" />
@@ -279,6 +280,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -318,4 +320,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
- </Project>
+</Project>

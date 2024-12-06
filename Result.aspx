@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico"/>
     <style>
         /* Center the "Results" label */
         .title {
@@ -40,11 +41,17 @@
         .custom-gridview tr:hover {
             background-color: #ddd;
         }
+        .preview{
+            color: #333;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
 
     </style>
-    <title>Result</title>
+    <title>Telecom Co. - Preview</title>
 </head>
 <body>
+    <h1 class ="preview">Preview</h1>
     <form id="form1" runat="server">
         <asp:GridView ID="customerGridView" CssClass="custom-gridview" runat="server" AutoGenerateColumns="True">
         </asp:GridView>
