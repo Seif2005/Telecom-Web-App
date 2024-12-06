@@ -41,11 +41,17 @@
         .custom-gridview tr:hover {
             background-color: #ddd;
         }
+        .preview{
+            color: #333;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
 
     </style>
-    <title>Result</title>
+    <title>Preview</title>
 </head>
 <body>
+    <h1 class ="preview">Preview</h1>
     <form id="form1" runat="server">
         <asp:GridView ID="customerGridView" CssClass="custom-gridview" runat="server" AutoGenerateColumns="True">
         </asp:GridView>
