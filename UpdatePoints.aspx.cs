@@ -23,8 +23,10 @@ namespace Telecom_Web_App
         {
             String mobileNum = Mobile_No.Text;
             if (mobileNum.Length != 11) {
-                Response.Write("Incorrect Mobile Number");
-            }else
+                //Response.Write("Incorrect Mobile Number");
+                LiteralError.Text = "<div style='color: red;'>Incorrect Mobile Number</div>";
+            }
+            else
             {
                 DataTable Data = new DataTable();
                 string connStr = WebConfigurationManager.ConnectionStrings["dbConnection"].ToString();

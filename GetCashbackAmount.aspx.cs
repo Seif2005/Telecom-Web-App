@@ -24,7 +24,8 @@ namespace Telecom_Web_App
                 }
                 else
                 {
-                    Response.Write("Mobile number not available.");
+                    LiteralError.Text = "<div style='color: red;'>Mobile number not available</div>";
+                    //Response.Write("Mobile number not available.");
                 }
             }
         }
@@ -36,19 +37,22 @@ namespace Telecom_Web_App
 
             if (string.IsNullOrEmpty(mobileNumber))
             {
-                lblResult.Text = "Mobile number is required.";
+                //lblResult.Text = "Mobile number is required.";
+                LiteralError.Text = "<div style='color: red;'>Mobile number is required</div>";
                 return;
             }
 
             if (!int.TryParse(txtPaymentId.Text, out paymentId) || paymentId <= 0)
             {
-                lblResult.Text = "Invalid Payment ID.";
+                //lblResult.Text = "Invalid Payment ID.";
+                LiteralError.Text = "<div style='color: red;'>Invalid Payment ID</div>";
                 return;
             }
 
             if (!int.TryParse(txtBenefitId.Text, out benefitId) || benefitId <= 0)
             {
-                lblResult.Text = "Invalid Benefit ID.";
+                //lblResult.Text = "Invalid Benefit ID.";
+                LiteralError.Text = "<div style='color: red;'>Invalid Benefit ID</div>";
                 return;
             }
             string query = @"
@@ -64,7 +68,8 @@ namespace Telecom_Web_App
 
             if (paymentData.Rows.Count == 0)
             {
-                lblResult.Text = "Invalid Payment ID for this mobile number.";
+                //lblResult.Text = "Invalid Payment ID for this mobile number.";
+                LiteralError.Text = "<div style='color: red;'>Invalid Payment ID for this mobile number</div>";
                 return;
             }
             string query2 = @"
@@ -80,14 +85,16 @@ namespace Telecom_Web_App
 
             if (paymentData2.Rows.Count == 0)
             {
-                lblResult.Text = "Invalid benefit ID for this mobile number.";
+                //lblResult.Text = "Invalid benefit ID for this mobile number.";
+                LiteralError.Text = "<div style='color: red;'>Invalid benefit ID for this mobile number</div>";
                 return;
             }
 
 
             string result = GetCashback(mobileNumber, paymentId, benefitId);
 
-            lblResult.Text = result;
+            //lblResult.Text = result;
+            LiteralError.Text = "<div style='color: green;'>Cashback has been successfully calculated and added to the wallet</div>";
         }
 
         private string GetCashback(string mobileNumber, int paymentId, int benefitId)

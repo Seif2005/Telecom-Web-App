@@ -55,5 +55,6 @@
             <asp:Label ID="lblResult" runat="server" ForeColor="Red" />
         </div>
     </form>
+    <asp:Literal ID="LiteralError" runat="server"></asp:Literal>
 </body>
 </html>

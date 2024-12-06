@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -21,7 +22,8 @@ namespace Telecom_Web_App
             string connStr = WebConfigurationManager.ConnectionStrings["dbConnection"].ToString();
             if (string.IsNullOrEmpty(txtWalletId.Text) || string.IsNullOrEmpty(txtStartTime.Text)|| string.IsNullOrEmpty(txtEndTime.Text))
             {
-                Response.Write("please Enter a wallet id ,a Start Date and a End Date");
+                //Response.Write("please Enter a wallet id ,a Start Date and a End Date");
+                LiteralError.Text = "<div style='color: red;'>Please Enter a wallet id ,a Start Date and a End Date</div>";
             }
             else
             {
@@ -41,11 +43,17 @@ namespace Telecom_Web_App
                         if (result.ToString() != "")
                         {
                             int TransferAmount = int.Parse(result.ToString());
-                            Response.Write("the Transfer Amount is " + TransferAmount.ToString());
+                            //Response.Write("the Transfer Amount is " + TransferAmount.ToString());
+                            DataTable table = new DataTable("Customers");
+                            table.Columns.Add("Column", typeof(int));
+                            table.Rows.Add(TransferAmount);
+                            Session["GridData"] = table;
+                            Response.Redirect("/Result.aspx");
                         }
                         else
                         {
-                            Response.Write("Please Enter Valid Wallet Id and Dates.");
+                            //Response.Write("Please Enter Valid Wallet Id and Dates.");
+                            LiteralError.Text = "<div style='color: red;'>Please Enter Valid Wallet Id and Dates</div>";
                         }
                     }
                 }

@@ -49,5 +49,6 @@
             <asp:Button ID="lastExtraAmount" runat="server" Text="Check Amount" OnClick="lastExtraAmountClick" class="submit-button"/>
         </div>
     </form>
+    <asp:Literal ID="LiteralError" runat="server"></asp:Literal>
 </body>
 </html>

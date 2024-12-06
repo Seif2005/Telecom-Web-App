@@ -23,7 +23,8 @@ namespace Telecom_Web_App
                 }
                 else
                 {
-                    Response.Write("Mobile number not available.");
+                    //Response.Write("Mobile number not available.");
+                    LiteralError.Text = "<div style='color: red;'>Mobile number not available</div>";
                 }
             }
         }
@@ -36,7 +37,8 @@ namespace Telecom_Web_App
             String amountValue = txtAmount.Text;
             if (mobileNumber == "" || plan == "" || amountValue == "")
             {
-                Response.Write("Invalid input. Please try again.");
+                //Response.Write("Invalid input. Please try again.");
+                LiteralError.Text = "<div style='color: red;'>Invalid input</div>";
                 return;
             }
             try
@@ -49,7 +51,8 @@ namespace Telecom_Web_App
 
                 if (string.IsNullOrEmpty(mobileNumber) || planId <= 0 || amount <= 0 || string.IsNullOrEmpty(paymentMethod))
                 {
-                    Response.Write("Invalid input. Please try again.");
+                    //Response.Write("Invalid input. Please try again.");
+                    LiteralError.Text = "<div style='color: red;'>Invalid input</div>";
                     return;
                 }
 
@@ -64,12 +67,14 @@ namespace Telecom_Web_App
                 }
                 else
                 {
-                    Response.Write("Failed to renew the subscription.");
+                    //Response.Write("Failed to renew the subscription.");
+                    LiteralError.Text = "<div style='color: red;'>Failed to renew the subscription</div>";
                 }
             }
             catch
             {
-                Response.Write("Please Enter all data");
+                //Response.Write("Please Enter all data");
+                LiteralError.Text = "<div style='color: red;'>Please Enter all data</div>";
             }
         }
         private DataTable CallStoredProcedure(string mobileNumber, decimal amount, string paymentMethod, int planId)

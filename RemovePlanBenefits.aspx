@@ -52,5 +52,6 @@
             <asp:Button ID="btnSubmit" runat="server" Text="Remove" OnClick="RemoveClick" />
         </div>
     </form>
+    <asp:Literal ID="LiteralError" runat="server"></asp:Literal>
 </body>
 </html>
