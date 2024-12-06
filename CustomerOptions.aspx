@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <link rel="stylesheet" href="styles2.css"/>
     <link rel="icon" type="image/x-icon" href="static/favicon.ico"/>
-    <title>Customer Options</title>
+    <title>Telecom Co. - Customer Options</title>
 </head>
 <body>
     <div class="logo">Telecom26 Co.</div>

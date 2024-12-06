@@ -48,7 +48,7 @@
         }
 
     </style>
-    <title>Preview</title>
+    <title>Telecom Co. - Preview</title>
 </head>
 <body>
     <h1 class ="preview">Preview</h1>

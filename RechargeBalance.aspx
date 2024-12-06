@@ -6,7 +6,7 @@
 <head runat="server">
     <link rel="stylesheet" href="styles1.css"/>
     <link rel="icon" type="image/x-icon" href="static/favicon.ico"/>
-    <title></title>
+    <title>Telecom Co. - Recharge Balance</title>
 </head>
 <body>
     <form id="form1" runat="server">

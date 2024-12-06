@@ -71,7 +71,7 @@
                 background-color: #0056b3;
             }
     </style>
-    <title>Login</title>
+    <title>Telecom Co. - Login</title>
 </head>
 <body>
     <form id="form1" class="login-form" runat="server">

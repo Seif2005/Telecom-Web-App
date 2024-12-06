@@ -6,12 +6,12 @@
 <head runat="server">
     <link rel="stylesheet" href="styles1.css"/>
     <link rel="icon" type="image/x-icon" href="static/favicon.ico"/>
-    <title></title>
+    <title>Telecom Co. - Transactions Average </title>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <h2>Wallet Id and date Specification  </h2>
+            <h2>Wallet Id and date Specification </h2>
             <asp:Label ID="lblWalletId" runat="server" Text="Wallet ID: "></asp:Label>
             <asp:TextBox ID="txtWalletId" runat="server"></asp:TextBox>
             <asp:Label ID="lblTime" runat="server" Text=" From Date:"></asp:Label>
