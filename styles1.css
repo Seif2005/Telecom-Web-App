@@ -12,7 +12,7 @@ body {
 
 /* Form container styling */
 form {
-    border: 3px solid #4CAF50;
+    border: 3px solid #2980b9;
     border-radius: 10px;
     text-align: center;
     background-color: #ffffff;
@@ -47,16 +47,15 @@ form input[type="text"] {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
 }
 
     form input[type="text"]:hover {
-        border-color: #4CAF50;
+        border-color: #2980b9;
     }
 
     form input[type="text"]:focus {
         outline: none;
-        border-color: #4CAF50;
+        border-color: #2980b9;
         box-shadow: 0 0 4px rgba(0, 91, 179, 0.5);
     }
 

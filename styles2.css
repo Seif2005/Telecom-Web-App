@@ -7,9 +7,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: white;
+    text-decoration: none;
     /*    height: 100vh;*/
     background-color: #f4f4f9;
     position: relative;
+}
+
+body a:focus, body a:hover {
+    color: white !important;
+    text-decoration: none !important;
 }
 
 /* Logo at the top left corner */
@@ -38,6 +45,8 @@ body {
     grid-template-rows: repeat(2, 200px);
     gap: 30px;
     margin-top: 30px;
+    color: white;
+    text-decoration: none;
 }
 
 /* Grid items (buttons) */
@@ -65,28 +74,63 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.icon-text:focus {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.icon-text:hover {
+    color: white !important;
+    text-decoration: none !important;
 }
 
 /* Style for the icon */
 .grid-item i {
     font-size: 40px;
     margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    color: white !important;
+    text-decoration: none !important;
 }
 
 /* Style for the text */
 .button-text {
     font-size: 14px;
     text-align: center;
+    color: white !important;
+    text-decoration: none;
 }
 
 /* Hover effect for buttons */
 .grid-item:hover {
     background-color: #0056b3;
     transform: scale(1.05);
+    color: white !important;
+    text-decoration: none;
 }
 
 /* Active effect for buttons */
 .grid-item:active {
     background-color: #004085;
     transform: scale(1);
+    color: white !important;
+    text-decoration: none;
+}
+
+.grid-item a:focus {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.grid-item a:hover {
+    color: white !important;
+    text-decoration: none !important;
 }
