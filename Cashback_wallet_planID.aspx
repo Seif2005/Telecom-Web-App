@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <link rel="stylesheet" href="styles2.css"/>
     <link rel="icon" type="image/x-icon" href="static/favicon.ico"/>
-    
+    <script type="text/javascript">
+        function showPopup(message) {
+            alert(message);
+        }
+    </script>
 
     <style>
         .navbar {
@@ -49,5 +53,6 @@
             <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="RetriveCashback" />
         </div>
     </form>
+    <asp:Literal ID="LiteralError" runat="server"></asp:Literal>
 </body>
 </html>

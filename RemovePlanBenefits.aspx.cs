@@ -24,7 +24,8 @@ namespace Telecom_Web_App
             String planId = txtPlanID.Text;
             if(mobile.Length != 11)
             {
-                Response.Write("Invalid Mobile Number");
+                //Response.Write("Invalid Mobile Number");
+                LiteralError.Text = "<div style='color: red;'>Invalid Mobile Numbe</div>";
             }
             else
             {

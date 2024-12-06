@@ -24,7 +24,8 @@ namespace Telecom_Web_App
             String mobileNum=AccMobileNo.Text;
             if (mobileNum.Length != 11)
             {
-                Response.Write("Incorrect mobile Number");
+                //Response.Write("Incorrect mobile Number");
+                LiteralError.Text = "<div style='color: red;'>Incorrect mobile Number</div>";
             }
             else
             {

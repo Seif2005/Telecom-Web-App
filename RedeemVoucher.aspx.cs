@@ -24,7 +24,8 @@ namespace Telecom_Web_App
                 }
                 else
                 {
-                    Response.Write("Mobile number not available.");
+                    //Response.Write("Mobile number not available.");
+                    LiteralError.Text = "<div style='color: red;'>Mobile number not available</div>";
                     btnRedeem.Enabled = false;
                 }
             }
@@ -36,13 +37,23 @@ namespace Telecom_Web_App
 
             if (!int.TryParse(txtVoucherId.Text, out voucherId) || voucherId <= 0)
             {
-                Response.Write("Invalid voucher ID. Please try again.");
+                //Response.Write("Invalid voucher ID. Please try again.");
+                LiteralError.Text = "<div style='color: red;'>Invalid voucher ID. Please try again</div>";
 
             }
-            string resultMessage = RedeemVoucherPoints(mobileNumber, voucherId);
-            lblResult.Text = resultMessage;
+            bool result = RedeemVoucherPoints(mobileNumber, voucherId);
+            //lblResult.Text = result;
+            if (result)
+            {
+                LiteralError.Text = "<div style='color: red;'>Voucher redeemed successfully</div>";
+            }
+            else
+            {
+                LiteralError.Text = "<div style='color: red;'>You do not have enough points to redeem this voucher or wrong voucher ID</div>";
+            }
+            
         }
-        private string RedeemVoucherPoints(string mobileNumber, int voucherId)
+        private bool RedeemVoucherPoints(string mobileNumber, int voucherId)
         {
             string connString = WebConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString;
 
@@ -60,11 +71,11 @@ namespace Telecom_Web_App
                     Response.Write(Rows_affected);
                     if (Rows_affected == -1)
                     {
-                        return "You do not have enough points to redeem this voucher or wrong voucher ID.";
+                        return false;
                     }
                     else
                     {
-                        return "Voucher redeemed successfully.";
+                        return true;
                     }
                 }
 

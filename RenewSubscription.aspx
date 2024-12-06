@@ -64,5 +64,6 @@
 
         </div>
     </form>
+    <asp:Literal ID="LiteralError" runat="server"></asp:Literal>
 </body>
 </html>

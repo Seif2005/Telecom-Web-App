@@ -52,5 +52,6 @@
             <asp:Button ID="btnSubmit" runat="server" Text="Check" OnClick="checkClick" />
         </div>
     </form>
+    <asp:Literal ID="LiteralError" runat="server"></asp:Literal>
 </body>
 </html>

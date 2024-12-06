@@ -20,7 +20,8 @@ namespace Telecom_Web_App
             string connStr = WebConfigurationManager.ConnectionStrings["dbConnection"].ToString();
             if (mobile.Length!=11)
             {
-                Response.Write("Please Enter a Valid Mobile Number.");
+                //Response.Write("Please Enter a Valid Mobile Number.");
+                LiteralError.Text = "<div style='color: red;'>Please Enter a Valid Mobile Number</div>";
             }
             else
             {
@@ -37,17 +38,20 @@ namespace Telecom_Web_App
                             bool res = (bool)result;
                             if (res)
                             {
-                                Response.Write("Wallet Exists");
+                                //Response.Write("Wallet Exists");
+                                LiteralError.Text = "<div style='color: red;'>Wallet Exists</div>";
                             }
                             else
                             {
-                                Response.Write("Wallet Does Not Exist");
+                                //Response.Write("Wallet Does Not Exist");
+                                LiteralError.Text = "<div style='color: red;'>Wallet Does Not Exist</div>";
                             }
                             
                         }
                         else
                         {
-                            Response.Write("Please Enter a Valid Mobile Number");
+                            //Response.Write("Please Enter a Valid Mobile Number");
+                            LiteralError.Text = "<div style='color: red;'>Please Enter a Valid Mobile Number</div>";
                         }
                     }
 

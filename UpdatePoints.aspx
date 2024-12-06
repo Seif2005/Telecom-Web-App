@@ -50,5 +50,6 @@
             <asp:Button ID="btnSubmit" runat="server" Text="Get Total Points" OnClick="Retrive_total_points" />
         </div>
     </form>
+    <asp:Literal ID="LiteralError" runat="server"></asp:Literal>
 </body>
 </html>

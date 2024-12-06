@@ -33,17 +33,25 @@ namespace Telecom_Web_App
                     command2.Parameters.AddWithValue("@planName", planName);
                     if (planName != "")
                     {
-                        object result1 = command2.ExecuteScalar();
-                        int output = int.Parse(result1.ToString());
-                        DataTable table = new DataTable("Customers");
-                        table.Columns.Add("Column", typeof(int));
-                        table.Rows.Add(output);
-                        Session["GridData"] = table;
-                        Response.Redirect("/Result.aspx");
+                        string[] array = { "Basic Plan", "Standard Plan", "Premium Plan", "Unlimited Plan", "Family Plan" };
+                        if (!Array.Exists(array, element => element == planName))
+                        {
+                            LiteralError.Text = "<div style='color: red;'>Please Enter a valid plan name</div>";
+                        }
+                        else
+                        {
+                            object result1 = command2.ExecuteScalar();
+                            int output = int.Parse(result1.ToString());
+                            DataTable table = new DataTable("Customers");
+                            table.Columns.Add("Column", typeof(int));
+                            table.Rows.Add(output);
+                            Session["GridData"] = table;
+                            Response.Redirect("/Result.aspx");
+                        }
                     }
                     else
                     {
-                        Response.Redirect("ExtraAmount.aspx");
+                        LiteralError.Text = "<div style='color: red;'>Please Enter a plan name</div>";
                     }
                 }
             }

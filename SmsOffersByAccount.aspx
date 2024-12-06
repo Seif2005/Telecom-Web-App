@@ -50,5 +50,6 @@
             <asp:Button ID="btnLogin" runat="server" Text="Check SMS" OnClick="CheckSMS" />
         </div>
     </form>
+    <asp:Literal ID="LiteralError" runat="server"></asp:Literal>
 </body>
 </html>

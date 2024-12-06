@@ -54,5 +54,6 @@
             <asp:Button ID="btnSubmit" runat="server" Text="Get Average Sent Transactions" OnClick="Get_Average_Sent_Transactions" />
         </div>
     </form>
+    <asp:Literal ID="LiteralError" runat="server"></asp:Literal>
 </body>
 </html>

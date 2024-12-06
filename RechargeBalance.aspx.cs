@@ -18,7 +18,8 @@ namespace Telecom_Web_App
 
             if (string.IsNullOrEmpty(mobileNumber))
             {
-                lblResult.Text = "Invalid Mobile Number.";
+                //lblResult.Text = "Invalid Mobile Number.";
+                LiteralError.Text = "<div style='color: red;'>Invalid Mobile Number</div>";
                 return;
             }
             else
@@ -35,7 +36,8 @@ namespace Telecom_Web_App
 
             if (string.IsNullOrEmpty(mobileNumber))
             {
-                lblResult.Text = "Invalid Mobile Number.";
+                //lblResult.Text = "Invalid Mobile Number.";
+                LiteralError.Text = "<div style='color: red;'>Invalid Mobile Number</div>";
                 return;
             }
             else
@@ -45,19 +47,22 @@ namespace Telecom_Web_App
 
             if (!decimal.TryParse(txtAmount.Text, out amount) || amount <= 0)
             {
-                lblResult.Text = "Invalid Amount.";
+                //lblResult.Text = "Invalid Amount.";
+                LiteralError.Text = "<div style='color: red;'>Invalid Amount</div>";
                 return;
             }
 
             if (string.IsNullOrEmpty(paymentMethod))
             {
                 lblResult.Text = "Please select a payment method.";
+                LiteralError.Text = "<div style='color: red;'>Please select a payment method</div>";
                 return;
             }
 
             string result = InitiateBalancePayment(mobileNumber, amount, paymentMethod);
 
-            lblResult.Text = result;
+            //lblResult.Text = result;
+            LiteralError.Text = "<div style='color: green;'>Balance recharged successfully</div>";
         }
 
         private string InitiateBalancePayment(string mobileNumber, decimal amount, string paymentMethod)
